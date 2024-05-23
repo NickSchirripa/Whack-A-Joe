@@ -26,7 +26,7 @@ function setGame(){
     
     setInterval(setMole, 1000)
     setInterval(setPlant, 2000)
-    document.getElementById("btn").style.display = "none"
+    
 
 
   
@@ -66,7 +66,8 @@ function setMole(){
     }
     currMoleTile = document.getElementById(num);
     currMoleTile.appendChild(mole);
-   
+    document.getElementById("btn").style.display = "none"
+
 }
 
 
@@ -123,6 +124,5 @@ function reStart(){
     gameover = false
     score = 0
     document.getElementById("score").innerText = "Whack a Joe"
-    document.getElementById("btn").style.display = "none"
 
 }
