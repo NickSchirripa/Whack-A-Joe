@@ -24,8 +24,8 @@ function setGame(){
 
     }
     
-    setInterval(setMole, 1000)
-    setInterval(setPlant, 2000)
+    setInterval(setMole, 800)
+    setInterval(setPlant, 1800)
     
 
 
