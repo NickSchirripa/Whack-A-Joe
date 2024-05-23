@@ -24,9 +24,8 @@ function setGame(){
 
     }
     
-    setInterval(setMole, 1000)
-    setInterval(setPlant, 2000)
-    document.getElementById("btn").style.display = "none"
+    setInterval(setMole, 800)
+    setInterval(setPlant, 1800)
 
 
   
