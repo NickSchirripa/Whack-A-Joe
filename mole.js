@@ -9,9 +9,7 @@ window.onload = function () {
 
 function setGame() {
   for (let i = 0; i < 9; i++) {
-    // TODO: Can we declare all of the variables with `const` instead of `let`?
-    // Does it break the app if we use `const`?
-    let tile = document.createElement("div");
+    const tile = document.createElement("div");
     tile.id = i.toString();
     tile.addEventListener("click", selectTile);
     document.getElementById("board").appendChild(tile);
@@ -80,11 +78,9 @@ function selectTile() {
     document.getElementById("score").innerText =
       "Game Over Loser" + " " + score.toString();
     gameover = true;
-    // TODO: Can we declare a variable with the result of getElementById? That
-    // way we can update the style on the variable and add the event listener to
-    // the variable. e.g. `const resetButtonElement = document.getElementById("btn")`
-    document.getElementById("btn").style.display = "block";
-    document.getElementById("btn").addEventListener("click", reStart);
+    const resetButtonElement = document.getElementById("btn");
+    resetButtonElement.style.display = "block";
+    resetButtonElement.addEventListener("click", reStart);
   }
 }
 
